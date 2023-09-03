@@ -8,10 +8,16 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+      gridTemplateColumns: {
+        app: 'minmax(18rem, 20rem) 1fr',
+      },
+      colors: {
+        'primary-blu': '#0693e3',
+        'secondary-blu': '#8ed1fc',
+        'primary-gray': '#33303E',
+        'secondary-gray': '#4E4B595',
+        'txt-gray': '#7A7789',
+        'opacity-gray': 'rgba(100, 80, 57, 0.1)',
       },
     },
   },
