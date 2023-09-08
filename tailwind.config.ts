@@ -10,6 +10,10 @@ const config: Config = {
     extend: {
       gridTemplateColumns: {
         app: 'minmax(18rem, 20rem) 1fr',
+        form: 'minmax(7.5rem, 17.5rem) minmax(25rem, 1fr) minmax(0, 15rem)',
+      },
+      borderWidth: {
+        6: '6px',
       },
       colors: {
         'primary-blu': '#0693e3',
@@ -18,6 +22,9 @@ const config: Config = {
         'secondary-gray': '#4E4B595',
         'txt-gray': '#7A7789',
         'opacity-gray': 'rgba(100, 80, 57, 0.1)',
+        violet: {
+          25: '#fcfaff',
+        },
       },
     },
   },

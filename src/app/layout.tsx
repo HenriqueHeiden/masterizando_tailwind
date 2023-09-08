@@ -20,11 +20,11 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
+    <html lang="en" className="antialiased">
       <body className={lato.className}>
-        <div className="grid-cols-app grid min-h-screen">
+        <div className="grid min-h-screen grid-cols-app">
           <Sidebar />
-          <main className="px-4">{children}</main>
+          <main className="px-8">{children}</main>
         </div>
       </body>
     </html>
