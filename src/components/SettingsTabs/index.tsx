@@ -4,6 +4,13 @@ import * as tabs from '@radix-ui/react-tabs'
 import * as ScrollAre from '@radix-ui/react-scroll-area'
 import { TabItem } from './TabItem'
 import { useState } from 'react'
+import Profile from '@/pages/Profile'
+import MinhasPostagens from '@/pages/MinhasPostagens'
+import CadastrarPost from '@/pages/CadastrarPost'
+import MeusConcursos from '@/pages/MeusConcursos'
+import CadastrarConcursos from '@/pages/CadastrarConcursos'
+import MeuPerfil from '@/pages/MeuPerfil'
+import MeuPlano from '@/pages/MeuPlano'
 
 export function SettingsTabs() {
   const [currentTab, setCurrentTab] = useState('tab1')
@@ -14,55 +21,60 @@ export function SettingsTabs() {
           <tabs.List className="mt-6 flex w-full items-center gap-4 border-b border-zinc-200 dark:border-zinc-700">
             <TabItem
               value="tab1"
-              title="My Details"
+              title="Minhas postagens"
               isSelected={currentTab === 'tab1'}
             />
             <TabItem
               value="tab2"
-              title="Profile"
+              title="Cadastrar Post"
               isSelected={currentTab === 'tab2'}
             />
             <TabItem
               value="tab3"
-              title="Password"
+              title="Meus concursos"
               isSelected={currentTab === 'tab3'}
             />
             <TabItem
               value="tab4"
-              title="Team"
+              title="Cadastrar concursos"
               isSelected={currentTab === 'tab4'}
             />
+
             <TabItem
               value="tab5"
-              title="Plan"
+              title="Meu Perfil"
               isSelected={currentTab === 'tab5'}
             />
+
             <TabItem
               value="tab6"
-              title="Billing"
+              title="Meu plano"
               isSelected={currentTab === 'tab6'}
             />
-            <TabItem
-              value="tab7"
-              title="Email"
-              isSelected={currentTab === 'tab7'}
-            />
-            <TabItem
-              value="tab8"
-              title="Notifications"
-              isSelected={currentTab === 'tab8'}
-            />
-            <TabItem
-              value="tab9"
-              title="Integrations"
-              isSelected={currentTab === 'tab9'}
-            />
-            <TabItem
-              value="tab10"
-              title="Api"
-              isSelected={currentTab === 'tab10'}
-            />
           </tabs.List>
+          <tabs.Content value="tab1">
+            <MinhasPostagens />
+          </tabs.Content>
+
+          <tabs.Content value="tab2">
+            <CadastrarPost />
+          </tabs.Content>
+
+          <tabs.Content value="tab3">
+            <MeusConcursos />
+          </tabs.Content>
+
+          <tabs.Content value="tab4">
+            <CadastrarConcursos />
+          </tabs.Content>
+
+          <tabs.Content value="tab5">
+            <MeuPerfil />
+          </tabs.Content>
+
+          <tabs.Content value="tab6">
+            <MeuPlano />
+          </tabs.Content>
         </ScrollAre.Viewport>
 
         <ScrollAre.Scrollbar

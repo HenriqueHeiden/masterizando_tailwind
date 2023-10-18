@@ -22,6 +22,13 @@ const config: Config = {
         'secondary-gray': '#4E4B595',
         'txt-gray': '#7A7789',
         'opacity-gray': 'rgba(100, 80, 57, 0.1)',
+        'gray100': '#E1E1E6',
+        'gray200': '#C4C4CC',
+        'gray300': '#7C7C8A',
+        'gray400': '#323238',
+        'gray500': '#29292E',
+        'gray600': '#202024',
+        'gray700': '#121214',
         violet: {
           25: '#fcfaff',
         },

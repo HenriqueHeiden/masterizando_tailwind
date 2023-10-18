@@ -1,7 +1,9 @@
+import { Share2 } from 'lucide-react'
+
 export function Logo() {
   return (
     <strong className="mx-1 flex items-center gap-2 text-xl font-semibold text-zinc-900 dark:text-zinc-100">
-      <svg
+      {/* <svg
         width={38}
         height={38}
         viewBox="0 0 38 38"
@@ -202,8 +204,9 @@ export function Logo() {
             <rect x={3} y={2} width={32} height={32} rx={8} fill="#fff" />
           </clipPath>
         </defs>
-      </svg>
-      <span className="">Untitled UI Á VAN</span>
+      </svg> */}
+      <Share2 className="h-8 w-8" color="#8ed1fc" />
+      <span className="">HMSHARE</span>
     </strong>
   )
 }

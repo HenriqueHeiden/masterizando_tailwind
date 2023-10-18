@@ -1,5 +1,5 @@
 import { SettingsTabs } from '@/components/SettingsTabs'
-import { InputControl, InputPrefix, InputRoot } from '../components/Input'
+import { InputControl, InputPrefix, InputRoot } from '../../components/Input'
 import { Bold, Italic, Link, List, ListOrdered, Mail } from 'lucide-react'
 import * as FileInput from '@/components/Form/FileInput'
 import { Select } from '@/components/Form/Select'
@@ -7,18 +7,15 @@ import { SelectItem } from '@/components/Form/Select/SelectItem'
 import { Textarea } from '@/components/Form/Textarea'
 import { Button } from '@/components/Button'
 
-export default function Home() {
+export default function Profile() {
   return (
     <>
-      <h1 className="text-3xl font-medium text-zinc-900 dark:text-zinc-100">
-        Settings
-      </h1>
-      <SettingsTabs />
-
-      {/* <div className="mt-6 flex flex-col">
-        <div className="flex flex-col  justify-between gap-4 border-b border-zinc-200 dark:border-zinc-700 pb-5 lg:flex-row lg:items-center">
+      <div className="mt-6 flex flex-col">
+        <div className="flex flex-col  justify-between gap-4 border-b border-zinc-200 pb-5 dark:border-zinc-700 lg:flex-row lg:items-center">
           <div className="space-y-1">
-            <h2 className="text-lg font-medium text-zinc-900 dark:text-zinc-100">Personal info</h2>
+            <h2 className="text-lg font-medium text-zinc-900 dark:text-zinc-100">
+              Personal info
+            </h2>
             <span className="text-sm text-zinc-500 dark:text-zinc-400">
               Update your photo and personal detail here.
             </span>
@@ -103,7 +100,10 @@ export default function Home() {
           </div>
 
           <div className="lg:grid-cols flex flex-col gap-3 pt-5  lg:grid">
-            <label htmlFor="role" className="text-sm font-medium text-zinc-700 dark:text-zinc-300">
+            <label
+              htmlFor="role"
+              className="text-sm font-medium text-zinc-700 dark:text-zinc-300"
+            >
               Role
             </label>
             <InputRoot>
@@ -141,7 +141,10 @@ export default function Home() {
           </div>
 
           <div className="lg:grid-cols flex flex-col gap-3 pt-5 lg:grid">
-            <label htmlFor="bio" className="text-sm font-medium text-zinc-700 dark:text-zinc-300">
+            <label
+              htmlFor="bio"
+              className="text-sm font-medium text-zinc-700 dark:text-zinc-300"
+            >
               Bio
               <span className="mt-0.5 block text-sm font-normal text-zinc-500">
                 Write a short introduction.
@@ -231,7 +234,7 @@ export default function Home() {
             </Button>
           </div>
         </form>
-      </div> */}
+      </div>
     </>
   )
 }
